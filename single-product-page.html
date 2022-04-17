@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Single Product Page</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+	<!-- Navigation Bar -->
+	<section class="navbar d-flex">
+		<nav class="w-87 d-flex">
+			<div class="logo">
+				<a href=""><img src="./images/logo.png"></a>
+			</div>
+			<div class="nav-links">
+				 <i class="fas fa-times" id="nav-icon-a" onclick="hideMenu()"></i>
+				<div id="navLinks">
+					<ul class="d-flex">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="index.html">Men's</a></li>
+						<li><a href="index.html">Women's</a></li>
+						<li><a href="index.html">Kid's</a></li>
+						<li class="dropdown">
+							<a class="dropbtn">Pages</a>
+							<div class="dropdown-content">
+								<a href="about-page.html">About Us</a>
+								<a href="product-page.html">Products</a>
+								<a href="single-product-page.html">Single Product</a>
+								<a href="contact-page.html">Contact Us</a>
+							</div>
+						</li>
+						<li><a href="index.html">Explore</a></li>
+					</ul>
+				</div>
+				 <i class="fas fa-bars" id="nav-icon-b" onclick="showMenu()"></i>
+			</div>
+		</nav>
+	</section>
+
+	<!-- Background Image Section -->
+	<section class="bg-section border-top">
+		<div class="bg-row">
+			<div class="bg-items w-87">
+				<h1>Single Product Page</h1>
+				<p>Awesome & Creative HTML CSS layout by TemplateMo</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Single Product Section -->
+	<section class="padd-b-64">
+		<div class="single-product-row row w-87 d-flex">
+			<div class="single-product-col">
+				<img src="./images/single-product-01.jpg" style="width: 100%;">
+				<img src="./images/single-product-02.jpg" style="width: 100%; padding-top: 25px;">
+			</div>
+
+			<div class="single-product-col-2">
+				<div class="wear-caption border">
+					<div class="d-flex">
+						<h3>New Green Jacket</h3>
+						<div class="wear-icons">
+							<i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+						</div>
+					</div>
+					<p>$75.00</p>
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod kon tempor incididunt ut labore.</p>
+				<div class="d-flex products-icon border">
+					<i class="fa fa-quote-left" aria-hidden="true"></i>
+					<p>You are not allowed to redistribute this template ZIP file on any other website.</p>
+				</div>
+				<div class="s-product-card d-flex border">
+					<h3>No. of Orders</h3>
+					<ul class="d-flex">
+						<li><a href="">-</a></li>
+						<li><a>1</a></li>
+						<li><a href="">+</a></li>
+					</ul>
+				</div>
+				<div class="s-product-card d-flex">
+					<h3>Total: $210.00</h3>
+					<a href="">Add To Cart</a>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer Section -->
+	<section class="footer">
+		<div class="row w-87 padd-64 f-border d-flex">
+			<div class="footer-col">
+				<img src="./images/white-logo.png">
+				<p><a href="">16501 Collins Ave, Sunny Isles Beach, FL 33160, United States</a></p>
+				<p><a href="">hexashop@company.com</a></p>
+				<p><a href="">010-020-0340</a></p>
+			</div>
+			<div class="footer-col">
+				<h3>Shopping & Categories</h3>
+				<p><a href="">Men’s Shopping</a></p>
+				<p><a href="">Women’s Shopping</a></p>
+				<p><a href="">Kid's Shopping</a></p>
+			</div>
+			<div class="footer-col">
+				<h3>Useful Links</h3>
+				<p><a href="">Homepage</a></p>
+				<p><a href="">About Us</a></p>
+				<p><a href="">Contact Us</a></p>
+			</div>
+			<div class="footer-col">
+				<h3>Help & Information</h3>
+				<p><a href="">Help</a></p>
+				<p><a href="">FAQ's</a></p>
+				<p><a href="">Shipping</a></p>
+				<p><a href="">Tracking ID</a></p>
+			</div>
+		</div>	
+		<div class="footer-row w-87">
+			<p>Copyright © 2022 HexaShop Co., Ltd. All Rights Reserved.</p>
+			<p>Design: <a href="">TemplateMo</a></p>
+			<div class="icons">
+				<a href=""><i class="fab fa-facebook-f"></i></a>
+				<a href=""><i class="fab fa-twitter"></i></a>
+				<a href=""><i class="fab fa-linkedin-in"></i></a>
+				<a href=""><i class="fab fa-behance"></i></a>
+			</div>
+		</div>	
+	</section>
+
+
+
+
+	<script type="text/javascript">
+		// Navigation Bar ----->
+		var navbar = document.getElementById("navLinks");
+		var icona = document.getElementById("nav-icon-a");
+		var iconb = document.getElementById("nav-icon-b");
+		function showMenu(){
+			navbar.style.top = "80px"
+			iconb.style.display = "none";
+			icona.style.display = "block";
+		}
+		function hideMenu() {
+			navbar.style.top = "-500px"
+			iconb.style.display = "block";
+			icona.style.display = "none";
+		}
+	</script>
+
+</body>
+</html>

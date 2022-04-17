@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HEXASHOP Repeat</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+	<!-- For Slider -->
+	<link rel="stylesheet" href="./css/owl.carousel.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+		integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="./js/owl.carousel.min.js" data-cover></script>
+</head>
+<body>
+	<!-- Navigation Bar -->
+	<section class="navbar d-flex">
+		<nav class="w-87 d-flex">
+			<div class="logo">
+				<a href=""><img src="./images/logo.png"></a>
+			</div>
+			<div class="nav-links">
+				 <i class="fas fa-times" id="nav-icon-a" onclick="hideMenu()"></i>
+				<div id="navLinks">
+					<ul class="d-flex">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#mens">Men's</a></li>
+						<li><a href="#womens">Women's</a></li>
+						<li><a href="#kids">Kid's</a></li>
+						<li class="dropdown">
+							<a class="dropbtn">Pages</a>
+							<div class="dropdown-content">
+								<a href="about-page.html">About Us</a>
+								<a href="product-page.html">Products</a>
+								<a href="single-product-page.html">Single Product</a>
+								<a href="contact-page.html">Contact Us</a>
+							</div>
+						</li>
+						<li><a href="#explore">Explore</a></li>
+					</ul>
+				</div>
+				 <i class="fas fa-bars" id="nav-icon-b" onclick="showMenu()"></i>
+			</div>
+		</nav>
+	</section>
+
+	<!-- Header Section -->
+	<section class="header border border-top">
+		<div class="header-row padd-64 d-flex">
+
+			<div class="header-col">
+				<img src="./images/left-banner-image.jpg" style="width: 100%;">
+				<div class="header-items">
+					<h2>We are Hexashop</h2>
+					<p>Awesome, clean and cretive HTML5 Template</p>
+					<div class="btn">
+						<a href="">Purchase Now!</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="header-col d-flex">
+				<div class="header-images">
+					<img src="./images/baner-right-image-01.jpg" style="width: 100%;">
+					<div class="header-image-items">
+						<h2>Women</h2>
+						<p>Best Cloths For Women</p>
+					</div>
+					<div class="header-hover">
+						<div class="header-hover-items d-flex">
+							<h2>Women</h2>
+							<p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
+							<div class="btn">
+								<a href="">Discover More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-images">
+					<img src="./images/baner-right-image-02.jpg" style="width: 100%;">
+					<div class="header-image-items">
+						<h2>Mens</h2>
+						<p>Best Cloths For Mens</p>
+					</div>
+					<div class="header-hover">
+						<div class="header-hover-items d-flex">
+							<h2>Mens</h2>
+							<p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
+							<div class="btn">
+								<a href="">Discover More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-images">
+					<img src="./images/baner-right-image-03.jpg" style="width: 100%;">
+					<div class="header-image-items">
+						<h2>Kids</h2>
+						<p>Best Cloths For Kids</p>
+					</div>
+					<div class="header-hover">
+						<div class="header-hover-items d-flex">
+							<h2>Kids</h2>
+							<p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
+							<div class="btn">
+								<a href="">Discover More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-images">
+					<img src="./images/baner-right-image-04.jpg" style="width: 100%;">
+					<div class="header-image-items">
+						<h2>Accessories</h2>
+						<p>Best Trand Accessories</p>
+					</div>
+					<div class="header-hover">
+						<div class="header-hover-items d-flex">
+							<h2>Accessories</h2>
+							<p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
+							<div class="btn">
+								<a href="">Discover More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- Men's Wear Section -->
+	<section class="wear-section border" id="mens">
+		<div class="wear-section-row row w-87 padd-64">
+		
+			<h2>Men's Latest</h2>
+			<p>Details to details is what makes Hexashop different from the other themes.</p>
+			<div class="owl-carousel owl-theme padd-top-32">
+				<div class="item">
+					<div class="wear-img">
+						<img src="./images/men-01.jpg">
+						<div class="wear-img-icons">
+							<i class="fas fa-eye"></i>
+	                        <i class="fas fa-star"></i>
+	                        <i class="fas fa-shopping-cart"></i>
+						</div>
+					</div>
+					<div class="wear-caption">
+						<div class="d-flex">
+							<h3>Classic Spring</h3>
+							<div class="wear-icons">
+								<i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+							</div>
+						</div>
+						<p>$120.00</p>
+					</div>
+				</div>
+				<div class="item">
+					<div class="wear-img">
+						<img src="./images/men-02.jpg">
+						<div class="wear-img-icons">
+							<i class="fas fa-eye"></i>
+	                        <i class="fas fa-star"></i>
+	                        <i class="fas fa-shopping-cart"></i>
+						</div>
+					</div>
+					<div class="wear-caption">
+						<div class="d-flex">
+							<h3>Air Force 1 X</h3>
+							<div class="wear-icons">
+								<i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+							</div>
+						</div>
+						<p>$90.00</p>
+					</div>
+				</div>
+				<div class="item">
+					<div class="wear-img">
+						<img src="./images/men-03.jpg">
+						<div class="wear-img-icons">
+							<i class="fas fa-eye"></i>
+	                        <i class="fas fa-star"></i>
+	                        <i class="fas fa-shopping-cart"></i>
+						</div>
+					</div>
+					<div class="wear-caption">
+						<div class="d-flex">
+							<h3>Love Nana'20</h3>
+							<div class="wear-icons">
+								<i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+							</div>
+						</div>
+						<p>$150.00</p>
+					</div>
+				</div>
+				<div class="item">
+					<div class="wear-img">
+						<img src="./images/men-02.jpg">
+						<div class="wear-img-icons">
+							<i class="fas fa-eye"></i>
+	                        <i class="fas fa-star"></i>
+	                        <i class="fas fa-shopping-cart"></i>
+						</div>
+					</div>
+					<div class="wear-caption">
+						<div class="d-flex">
+							<h3>Air Force 1 X</h3>
+							<div class="wear-icons">
+								<i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+							</div>
+						</div>
+						<p>$90.00</p>
+					</div>
+				</div>
+			</div>	
+
+		</div>
+	</section>
+
+	<!-- Women's Wear Section -->
+	<section class="wear-section border" id="womens">
+		<div class="wear-section-row row w-87 padd-64">
+		
+			<h2>Women's Latest</h2>
+			<p>Details to details is what makes Hexashop different from the other themes.</p>
+			<div class="owl-carousel owl-theme padd-top-32">
+				<div class="item">
+					<div class="wear-img">
+						<img src="./images/women-01.jpg">
+						<div class="wear-img-icons">
+							<i class="fas fa-eye"></i>
+	                        <i class="fas fa-star"></i>
+	                        <i class="fas fa-shopping-cart"></i>
+						</div>
+					</div>
+					<div class="wear-caption">
+						<div class="d-flex">
+							<h3>New Green Jacket</h3>
+							<div class="wear-icons">
+								<i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+							</div>
+						</div>
+						<p>$75.00</p>
+					</div>
+				</div>
+				<div class="item">
+					<div class="wear-img">
+						<img src="./images/women-02.jpg">
+						<div class="wear-img-icons">
+							<i class="fas fa-eye"></i>
+	                        <i class="fas fa-star"></i>
+	                        <i class="fas fa-shopping-cart"></i>
+						</div>
+					</div>
+					<div class="wear-caption">
+						<div class="d-flex">
+							<h3>Classic Dress</h3>
+							<div class="wear-icons">
+								<i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+							</div>
+						</div>
+						<p>$45.00</p>
+					</div>
+				</div>
+				<div class="item">
+					<div class="wear-img">
+						<img src="./images/women-03.jpg">
+						<div class="wear-img-icons">
+							<i class="fas fa-eye"></i>
+	                        <i class="fas fa-star"></i>
+	                        <i class="fas fa-shopping-cart"></i>
+						</div>
+					</div>
+					<div class="wear-caption">
+						<div class="d-flex">
+							<h3>Spring Collection</h3>
+							<div class="wear-icons">
+								<i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+							</div>
+						</div>
+						<p>$130.00</p>
+					</div>
+				</div>
+				<div class="item">
+					<div class="wear-img">
+						<img src="./images/women-02.jpg">
+						<div class="wear-img-icons">
+							<i class="fas fa-eye"></i>
+	                        <i class="fas fa-star"></i>
+	                        <i class="fas fa-shopping-cart"></i>
+						</div>
+					</div>
+					<div class="wear-caption">
+						<div class="d-flex">
+							<h3>Classic Dress</h3>
+							<div class="wear-icons">
+								<i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+							</div>
+						</div>
+						<p>$45.00</p>
+					</div>
+				</div>
+			</div>	
+
+		</div>
+	</section>
+
+	<!-- Kids's Wear Section -->
+	<section class="wear-section border" id="kids">
+		<div class="wear-section-row row w-87 padd-64">
+		
+			<h2>Kid's Latest</h2>
+			<p>Details to details is what makes Hexashop different from the other themes.</p>
+			<div class="owl-carousel owl-theme padd-top-32">
+				<div class="item">
+					<div class="wear-img">
+						<img src="./images/kid-01.jpg">
+						<div class="wear-img-icons">
+							<i class="fas fa-eye"></i>
+	                        <i class="fas fa-star"></i>
+	                        <i class="fas fa-shopping-cart"></i>
+						</div>
+					</div>
+					<div class="wear-caption">
+						<div class="d-flex">
+							<h3>School Collection</h3>
+							<div class="wear-icons">
+								<i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+							</div>
+						</div>
+						<p>$80.00</p>
+					</div>
+				</div>
+				<div class="item">
+					<div class="wear-img">
+						<img src="./images/kid-02.jpg">
+						<div class="wear-img-icons">
+							<i class="fas fa-eye"></i>
+	                        <i class="fas fa-star"></i>
+	                        <i class="fas fa-shopping-cart"></i>
+						</div>
+					</div>
+					<div class="wear-caption">
+						<div class="d-flex">
+							<h3>Summer Cap</h3>
+							<div class="wear-icons">
+								<i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+							</div>
+						</div>
+						<p>$12.00</p>
+					</div>
+				</div>
+				<div class="item">
+					<div class="wear-img">
+						<img src="./images/kid-03.jpg">
+						<div class="wear-img-icons">
+							<i class="fas fa-eye"></i>
+	                        <i class="fas fa-star"></i>
+	                        <i class="fas fa-shopping-cart"></i>
+						</div>
+					</div>
+					<div class="wear-caption">
+						<div class="d-flex">
+							<h3>Classic Kid</h3>
+							<div class="wear-icons">
+								<i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+							</div>
+						</div>
+						<p>$30.00</p>
+					</div>
+				</div>
+				<div class="item">
+					<div class="wear-img">
+						<img src="./images/kid-02.jpg">
+						<div class="wear-img-icons">
+							<i class="fas fa-eye"></i>
+	                        <i class="fas fa-star"></i>
+	                        <i class="fas fa-shopping-cart"></i>
+						</div>
+					</div>
+					<div class="wear-caption">
+						<div class="d-flex">
+							<h3>Summer Cap</h3>
+							<div class="wear-icons">
+								<i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+							</div>
+						</div>
+						<p>$12.00</p>
+					</div>
+				</div>
+			</div>	
+
+		</div>
+	</section>
+
+	<!-- Products Section -->
+	<section class="products border" id="explore">
+		<div class="row w-87 padd-64 d-flex">
+			<div class="products-col" style="margin: 20px 0;">
+				<h2>Explore Our Products</h2>
+				<p>You are allowed to use this HexaShop HTML CSS template. You can feel free to modify or edit this layout. You can convert this template as any kind of ecommerce CMS theme as you wish.</p>
+				<div class="d-flex products-icon">
+					<i class="fa fa-quote-left" aria-hidden="true"></i>
+					<p>You are not allowed to redistribute this template ZIP file on any other website.</p>
+				</div>
+				<p>There are 5 pages included in this HexaShop Template and we are providing it to you for absolutely free of charge at our TemplateMo website. There are web development costs for us.</p>
+				<p>If this template is beneficial for your website or business, please kindly <span><a href="">support us </a></span>a little via PayPal. Please also tell your friends about our great website. Thank you.</p>
+				<div class="btn btn-2">
+					<a href="">Discover More</a>
+				</div>
+			</div>
+
+			<div class="products-col">
+				<div class="products-row d-flex">
+					<div class="products-grid products-img-box">
+						<h3>Leather Bags</h3>
+						<p>Latest Collection</p>
+					</div>
+					<div class="products-grid">
+						<img src="./images/explore-image-01.jpg" style="width: 100%;">
+					</div>
+				</div>
+
+				<div class="products-row d-flex">
+					<div class="products-grid">
+						<img src="./images/explore-image-02.jpg" style="width: 100%;">
+					</div>
+					<div class="products-grid products-img-box">
+						<h3>Different Types</h3>
+						<p>Over 304 Products</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Social Media Section -->
+	<section class="social border">
+		<div class="row w-87 padd-64">
+			<h2>Social Media</h2>
+			<p>Details to details is what makes Hexashop different from the other themes.</p>
+			
+			<div class="social-col d-flex">
+					<div class="social-img">
+						<img src="./images/instagram-01.jpg" style="width: 100%;">
+						<div class="social-img-caption">
+							<h5>Fashion</h5>
+							<i class="fas fa-camera-retro"></i>
+						</div>
+					</div>
+					<div class="social-img">
+						<img src="./images/instagram-02.jpg" style="width: 100%;">
+						<div class="social-img-caption">
+							<h5>New</h5>
+							<i class="fas fa-camera-retro"></i>
+						</div>
+					</div>
+					<div class="social-img">
+						<img src="./images/instagram-03.jpg" style="width: 100%;">
+						<div class="social-img-caption">
+							<h5>Brand</h5>
+							<i class="fas fa-camera-retro"></i>
+						</div>
+					</div>
+					<div class="social-img">
+						<img src="./images/instagram-04.jpg" style="width: 100%;">
+						<div class="social-img-caption">
+							<h5>Makeup</h5>
+							<i class="fas fa-camera-retro"></i>
+						</div>
+					</div>
+					<div class="social-img">
+						<img src="./images/instagram-05.jpg" style="width: 100%;">
+						<div class="social-img-caption">
+							<h5>Leather</h5>
+							<i class="fas fa-camera-retro"></i>
+						</div>
+					</div>
+					<div class="social-img">
+						<img src="./images/instagram-06.jpg" style="width: 100%;">
+						<div class="social-img-caption">
+							<h5>Bag</h5>
+							<i class="fas fa-camera-retro"></i>
+						</div>
+					</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Section -->
+	<section class="contact">
+		<div class="row w-87 padd-64 d-flex">
+			<div class="contact-col">
+				<h2>By Subscribing To Our Newsletter You Can Get 30% Off</h2>
+				<p>Details to details is what makes Hexashop different from the other themes.</p>
+				<form>
+					<input type="text" name="Name" placeholder="Your Name">
+					<input type="email" name="Email" placeholder="Your Email Address">
+					<button type="submit"><i class="fas fa-location-arrow"></i></button>
+				</form>
+			</div>
+
+			<div class="d-flex contact-section">
+				<div class="contact-col-2">
+					<div>
+						<h4>Store Location:</h4>
+						<p>Sunny Isles Beach, FL 33160, United States</p>
+					</div>
+					<div>
+						<h4>Phone:</h4>
+						<p>010-020-0340</p>
+					</div>
+					<div>
+						<h4>Office Location:</h4>
+						<p>North Miami Beach</p>
+					</div>
+				</div>
+				<div class="contact-col-2">
+					<div>
+						<h4>Work Hours:</h4>
+						<p>07:30 AM - 9:30 PM Daily</p>
+					</div>
+					<div>
+						<h4>Email:</h4>
+						<p>info@company.com</p>
+					</div>
+					<div>
+						<h4>Social Media:</h4>
+						<p>Facebook, Instagram, Behance, Linkedin</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer Section -->
+	<section class="footer">
+		<div class="row w-87 padd-64 f-border d-flex">
+			<div class="footer-col">
+				<img src="./images/white-logo.png">
+				<p><a href="">16501 Collins Ave, Sunny Isles Beach, FL 33160, United States</a></p>
+				<p><a href="">hexashop@company.com</a></p>
+				<p><a href="">010-020-0340</a></p>
+			</div>
+			<div class="footer-col">
+				<h3>Shopping & Categories</h3>
+				<p><a href="">Men’s Shopping</a></p>
+				<p><a href="">Women’s Shopping</a></p>
+				<p><a href="">Kid's Shopping</a></p>
+			</div>
+			<div class="footer-col">
+				<h3>Useful Links</h3>
+				<p><a href="">Homepage</a></p>
+				<p><a href="">About Us</a></p>
+				<p><a href="">Contact Us</a></p>
+			</div>
+			<div class="footer-col">
+				<h3>Help & Information</h3>
+				<p><a href="">Help</a></p>
+				<p><a href="">FAQ's</a></p>
+				<p><a href="">Shipping</a></p>
+				<p><a href="">Tracking ID</a></p>
+			</div>
+		</div>	
+		<div class="footer-row w-87">
+			<p>Copyright © 2022 HexaShop Co., Ltd. All Rights Reserved.</p>
+			<p>Design: <a href="">TemplateMo</a></p>
+			<div class="icons">
+				<a href=""><i class="fab fa-facebook-f"></i></a>
+				<a href=""><i class="fab fa-twitter"></i></a>
+				<a href=""><i class="fab fa-linkedin-in"></i></a>
+				<a href=""><i class="fab fa-behance"></i></a>
+			</div>
+		</div>	
+	</section>
+
+
+	<script type="text/javascript">
+		// Navigation Bar ----->
+		var navbar = document.getElementById("navLinks");
+		var icona = document.getElementById("nav-icon-a");
+		var iconb = document.getElementById("nav-icon-b");
+		function showMenu(){
+			navbar.style.top = "80px"
+			iconb.style.display = "none";
+			icona.style.display = "block";
+		}
+		function hideMenu() {
+			navbar.style.top = "-500px"
+			iconb.style.display = "block";
+			icona.style.display = "none";
+		}
+
+		// Slider ----->
+		$('.owl-carousel').owlCarousel({
+				loop: true,
+				margin: 30,
+				nav: true,
+				dots: true,
+				responsive: {
+					0: {
+						items: 1
+					},
+					600: {
+						items: 2
+					},
+					1000: {
+						items: 3
+					}
+				}
+			})
+	</script>
+
+</body>
+</html>
